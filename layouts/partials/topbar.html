@@ -1,0 +1,34 @@
+<!-- ══════════════════════════════════════════════════════════════════════════
+     Top navigation bar — sticky, Clarity-style (Poppins, #fff, 1px border)
+     Left: site name  ·  Centre: section anchors  ·  Right: social icons
+     ══════════════════════════════════════════════════════════════════════════ -->
+<header class="site-header">
+    <div class="header-inner">
+
+        <!-- Logo / name -->
+        <a href="/" class="header-logo">{{ .Site.Params.name }}</a>
+
+        <!-- Section navigation (populated from [menu.main] in hugo.toml) -->
+        <nav class="header-nav" aria-label="Site sections">
+            {{ range .Site.Menus.main }}
+            <a href="{{ .URL }}" class="header-link">{{ .Name }}</a>
+            {{ end }}
+        </nav>
+
+        <!-- Social icons -->
+        <div class="header-social">
+            <a href="https://github.com/{{ .Site.Params.github }}"
+               target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/{{ .Site.Params.linkedin }}"
+               target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:{{ .Site.Params.email }}" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+    </div>
+</header>

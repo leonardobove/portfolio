@@ -12,7 +12,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 function initTheme() {
   const btn = $('#theme-toggle');
   const icon = $('.theme-icon', btn);
-  const stored = localStorage.getItem('theme') || 'dark';
+  const stored = localStorage.getItem('theme') || 'light';
 
   document.documentElement.setAttribute('data-theme', stored);
   updateThemeIcon(icon, stored);
@@ -127,7 +127,7 @@ function initConstellation() {
 
   function getColor() {
     const theme = document.documentElement.getAttribute('data-theme');
-    return theme === 'light' ? '2, 119, 189' : '79, 195, 247';
+    return theme === 'dark' ? '96, 165, 250' : '29, 78, 216';
   }
 
   function draw() {
@@ -232,6 +232,7 @@ function initNavScroll() {
   const nav = $('.nav');
   if (!nav) return;
   const onScroll = () => nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+  onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 

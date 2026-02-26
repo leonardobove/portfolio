@@ -1,6 +1,6 @@
 <!-- ══════════════════════════════════════════════════════════════════════════
-     About — first .container.blog.main (class "first" + id "blog-main")
-     navbar.js picks up every h1/h2 inside .container.blog.main for the ToC.
+     About — homepage compact version: first paragraph + research interests only.
+     Full bio lives on the /research/ page.
      ══════════════════════════════════════════════════════════════════════════ -->
 <div class="container blog main first" id="blog-main">
     <h1>About</h1>
@@ -8,23 +8,6 @@
     <p class="text">
         I am a Graduate Research Fellow in the Department of Information Engineering at the University of Pisa,
         where I design and operate instrumentation for superconducting qubit experiments.
-    </p>
-
-    <p class="text">
-        My work lives at the intersection of quantum physics and engineering: I build the classical control
-        systems — FPGA firmware, microwave electronics, readout chains — that make quantum processors
-        measurable and controllable. My master's thesis, developed partly at
-        <a href="https://sqms.fnal.gov/">Fermilab SQMS</a>, focused on FPGA-based qubit readout using the
-        QICK platform, and on <em>Qubase</em>, a Python pulse sequencer I engineered for high-throughput
-        qubit characterization.
-    </p>
-
-    <p class="text">
-        I have performed the <strong>first qubit measurements</strong> ever conducted in the Engineering
-        Department of the University of Pisa, graduating with <em>110/110 summa cum laude</em>
-        (GPA&nbsp;4.0/4.0) at both bachelor's and master's level. Beyond research, I have led
-        25+&nbsp;engineers as CTO of the University of Pisa FSAE electric racing team, and I am an active
-        tutor and mentor for younger students.
     </p>
 
     <h2>Research Interests</h2>
@@ -35,17 +18,5 @@
         Microwave engineering &amp; low-noise readout chains &nbsp;·&nbsp;
         Embedded systems &amp; real-time firmware &nbsp;·&nbsp;
         Quantum error characterization (T₁, T₂)
-    </p>
-</div>
-
-<!-- Equation in a gray container — Clarity pattern for highlighted content -->
-<div class="container blog main gray">
-    <p class="caption inline"><b>Dispersive Readout Hamiltonian</b></p>
-    <p style="text-align: center; padding: 1rem 0;">
-        $$\hat{H}_{\text{disp}} = \hbar\!\left(\omega_r + \chi\hat{\sigma}_z\right)\hat{a}^\dagger\hat{a}$$
-    </p>
-    <p class="caption">
-        where $\chi$ is the dispersive coupling strength and $\hat{\sigma}_z$ is the qubit Pauli operator.
-        The state-dependent shift of the resonator frequency enables quantum non-demolition readout.
     </p>
 </div>

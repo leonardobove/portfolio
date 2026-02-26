@@ -1,93 +1,54 @@
 <!-- ══════════════════════════════════════════════════════════════════════════
-     Research — Clarity pattern: h1 section, h2 per project,
-     inline <code> tags for tech stack (Fira Code, gray bg — Clarity default)
+     Research — full research statement, bio, and interests.
+     Clarity pattern: h1 + h2 subsections, gray equation box.
+     navbar.js picks up h1/h2 inside .container.blog.main for the ToC.
      ══════════════════════════════════════════════════════════════════════════ -->
-<div class="container blog main">
+<div class="container blog main first" id="blog-main">
     <h1>Research</h1>
 
-    <!-- ── Project 1 ──────────────────────────────────────────────────────── -->
-    <h2>Qubase — Python Pulse Sequencer for FPGA Quantum Control</h2>
-    <p class="project-meta">
-        2025 &nbsp;·&nbsp; Fermilab SQMS &nbsp;·&nbsp; Master's Thesis &nbsp;·&nbsp;
-        <code>Python</code> <code>FPGA / QICK</code> <code>Superconducting Qubits</code>
-        <code>Graph Algorithms</code> <code>rustworkx</code>
-    </p>
+    <h2>Research Statement</h2>
+
     <p class="text">
-        A high-level Python pulse sequencer built on top of the QICK FPGA platform. Qubase models
-        pulse sequences as directed acyclic graphs (using <code>rustworkx</code>), enabling symbolic
-        scheduling, parallel branch execution, and automated calibration workflows. Applied to
-        characterize 2D and 3D superconducting qubits at Fermilab and support advanced quantum
-        experiments including parallel fast-decay detection sequences.
+        I am a Graduate Research Fellow in the Department of Information Engineering at the University of Pisa,
+        where I design and operate instrumentation for superconducting qubit experiments.
     </p>
 
-    <!-- ── Project 2 ──────────────────────────────────────────────────────── -->
-    <h2>FPGA-Based Qubit Readout &amp; T₁/T₂ Characterization</h2>
-    <p class="project-meta">
-        2025 &nbsp;·&nbsp; University of Pisa, Research Fellowship &nbsp;·&nbsp;
-        <code>QICK</code> <code>FPGA</code> <code>Verilog</code>
-        <code>Microwave Engineering</code> <code>VNA</code> <code>Python</code>
-    </p>
     <p class="text">
-        Designed and operated a complete qubit measurement infrastructure using frequency-multiplexing
-        strategies and the QICK FPGA platform. Performed the <strong>first qubit experiments</strong>
-        ever conducted in the Engineering Department at Pisa. Engineered the full microwave readout
-        chain to maximise SNR without quantum-limited amplifiers, and established remote-access
-        infrastructure for qubit experiments via JupyterLab.
+        My work lives at the intersection of quantum physics and engineering: I build the classical control
+        systems — FPGA firmware, microwave electronics, readout chains — that make quantum processors
+        measurable and controllable. My master's thesis, developed partly at
+        <a href="https://sqms.fnal.gov/">Fermilab SQMS</a>, focused on FPGA-based qubit readout using the
+        QICK platform, and on <em>Qubase</em>, a Python pulse sequencer I engineered for high-throughput
+        qubit characterization.
     </p>
 
-    <!-- ── Project 3 ──────────────────────────────────────────────────────── -->
-    <h2>QPCB — Quantum Pulse Conversion Board</h2>
-    <p class="project-meta">
-        2025 &nbsp;·&nbsp; Fermilab SQMS &nbsp;·&nbsp;
-        <code>PCB Design</code> <code>ADS Keysight</code> <code>EM Simulation</code>
-        <code>Altium</code> <code>RF</code>
-    </p>
     <p class="text">
-        Designed and analysed a custom microwave PCB for pulse frequency conversion in quantum
-        computing setups. Full electromagnetic simulation using ADS Keysight, including S-parameter
-        optimisation and signal integrity analysis. The board bridges FPGA output frequencies to qubit
-        drive frequencies, reducing system complexity.
+        I have performed the <strong>first qubit measurements</strong> ever conducted in the Engineering
+        Department of the University of Pisa, graduating with <em>110/110 summa cum laude</em>
+        (GPA&nbsp;4.0/4.0) at both bachelor's and master's level. Beyond research, I have led
+        25+&nbsp;engineers as CTO of the University of Pisa FSAE electric racing team, and I am an active
+        tutor and mentor for younger students.
     </p>
 
-    <!-- ── Project 4 ──────────────────────────────────────────────────────── -->
-    <h2>Neural Network Digit Recogniser on FPGA</h2>
-    <p class="project-meta">
-        2025 &nbsp;·&nbsp; University of Pisa &nbsp;·&nbsp;
-        <code>Verilog</code> <code>FPGA</code> <code>Python</code>
-        <code>Neural Networks</code> <code>Quartus</code>
-    </p>
-    <p class="text">
-        Engineered a handwritten digit recognition system on the Altera DE10-Lite (MAX10 FPGA). Built
-        a Python digital twin for neural network training and fixed-point quantisation. Implemented a
-        custom Verilog inference engine with touchscreen driver and LT24 display output. Achieved
-        real-time inference with hardware-efficient quantised weights.
-    </p>
+    <h2>Research Interests</h2>
 
-    <!-- ── Project 5 ──────────────────────────────────────────────────────── -->
-    <h2>Multi-Architecture Bootloader with CAN Bus (ARM/AVR)</h2>
-    <p class="project-meta">
-        2022–2023 &nbsp;·&nbsp; E-Team Squadra Corse, FSAE &nbsp;·&nbsp;
-        <code>C/C++</code> <code>CAN Bus</code> <code>ARM</code>
-        <code>AVR</code> <code>FreeRTOS</code>
-    </p>
     <p class="text">
-        Engineered a unified bootloader supporting ARM and AVR microcontroller architectures with CAN
-        bus communication for remote firmware updates on inaccessible ECUs in an electric race car.
-        Enables rapid firmware deployment during time-critical race scenarios. Co-developed a MiL/SiL
-        virtualisation framework for pre-deployment firmware testing.
+        Superconducting qubit characterization &amp; control &nbsp;·&nbsp;
+        FPGA-based quantum control systems &nbsp;·&nbsp;
+        Microwave engineering &amp; low-noise readout chains &nbsp;·&nbsp;
+        Embedded systems &amp; real-time firmware &nbsp;·&nbsp;
+        Quantum error characterization (T₁, T₂)
     </p>
+</div>
 
-    <!-- ── Project 6 ──────────────────────────────────────────────────────── -->
-    <h2>SpaceFibre-Compatible 6.25 GHz PLL in SiGe BiCMOS</h2>
-    <p class="project-meta">
-        2023 &nbsp;·&nbsp; University of Pisa &nbsp;·&nbsp;
-        <code>ADS Keysight</code> <code>SiGe BiCMOS</code>
-        <code>RF IC Design</code> <code>SpaceFibre</code>
+<!-- Equation in a gray container — Clarity pattern for highlighted content -->
+<div class="container blog main gray">
+    <p class="caption inline"><b>Dispersive Readout Hamiltonian</b></p>
+    <p style="text-align: center; padding: 1rem 0;">
+        $$\hat{H}_{\text{disp}} = \hbar\!\left(\omega_r + \chi\hat{\sigma}_z\right)\hat{a}^\dagger\hat{a}$$
     </p>
-    <p class="text">
-        Modelled and simulated a phase-locked loop for SpaceFibre protocol compliance using the
-        SG25H4 0.25&nbsp;µm SiGe BiCMOS technology. Full system-level stability analysis, phase noise
-        characterisation, and performance benchmarking. Evaluated lock range, capture range, and
-        jitter under process corners.
+    <p class="caption">
+        where $\chi$ is the dispersive coupling strength and $\hat{\sigma}_z$ is the qubit Pauli operator.
+        The state-dependent shift of the resonator frequency enables quantum non-demolition readout.
     </p>
 </div>

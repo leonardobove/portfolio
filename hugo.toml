@@ -22,24 +22,24 @@ enableGitInfo = false
 
 [menu]
   [[menu.main]]
-    name = "About"
-    url = "#about"
+    name = "Research"
+    url = "/research/"
     weight = 1
   [[menu.main]]
-    name = "Research"
-    url = "#research"
+    name = "Projects"
+    url = "/projects/"
     weight = 2
   [[menu.main]]
     name = "Publications"
-    url = "#publications"
+    url = "/publications/"
     weight = 3
   [[menu.main]]
     name = "CV"
-    url = "#cv"
+    url = "/cv/"
     weight = 4
   [[menu.main]]
     name = "Contact"
-    url = "#contact"
+    url = "/contact/"
     weight = 5
 
 [markup]

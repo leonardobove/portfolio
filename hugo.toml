@@ -1,7 +1,6 @@
 baseURL = "https://leonardobove.github.io/"
 languageCode = "en-us"
 title = "Leonardo Bove — Quantum & Electronic Engineering"
-theme = ""
 enableRobotsTXT = true
 enableGitInfo = false
 

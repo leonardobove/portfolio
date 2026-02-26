@@ -1,20 +1,2 @@
-<nav class="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a class="nav__logo" href="/" aria-label="Home">
-      <span class="nav__logo-bracket">[</span>
-      <span class="nav__logo-name">L. Bove</span>
-      <span class="nav__logo-bracket">]</span>
-    </a>
-    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav__menu" id="nav-menu" role="list">
-      {{ range .Site.Menus.main }}
-      <li><a class="nav__link" href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-    <button class="nav__theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark mode">
-      <span class="theme-icon theme-icon--dark">◐</span>
-    </button>
-  </div>
-</nav>
+<!-- Navigation sidebar is generated automatically by /js/navbar.js
+     from every <h1> and <h2> found inside .container.blog.main elements. -->

@@ -1,38 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="{{ .Site.Params.description }}" />
-  <meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}" />
-  <meta name="author" content="{{ .Site.Params.name }}" />
-  <meta property="og:title" content="{{ .Site.Title }}" />
-  <meta property="og:description" content="{{ .Site.Params.description }}" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{{ .Site.Title }}" />
-  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
-  <title>{{ .Site.Title }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-  {{ if .Site.Params.katex }}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
-  {{ end }}
-  <link rel="stylesheet" href="/css/main.css" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta name="keywords"    content="{{ delimit .Site.Params.keywords ", " }}">
+    <meta name="author"      content="{{ .Site.Params.name }}">
+    <meta name="robots"      content="all">
+    <meta property="og:title"       content="{{ .Site.Title }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="{{ .Site.BaseURL }}">
+    <meta name="twitter:card"        content="summary">
+    <meta name="twitter:title"       content="{{ .Site.Title }}">
+    <meta name="twitter:description" content="{{ .Site.Params.description }}">
+
+    <!-- ── Clarity Template: core layout + typography ─────────────────────── -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lorenmt/clarity-template@main/assets/stylesheets/main_free.css">
+    <!-- ── Clarity Template: Charter font declarations + column grid ───────── -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lorenmt/clarity-template@main/clarity/clarity.css">
+    <!-- ── Syntax highlighting (foundation theme, as used by Clarity) ────── -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/foundation.min.css">
+    <!-- ── FontAwesome 6 (used by Clarity navbar + icons) ─────────────────── -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- ── Portfolio-specific overrides (Charter fallback, status badge …) ── -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- ── MathJax (LaTeX rendering identical to Clarity, Gyre-Pagella font) -->
+    {{ if .Site.Params.katex }}
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            "HTML-CSS": {
+                scale: 95,
+                fonts: ["Gyre-Pagella"],
+                imageFont: null,
+                undefinedFamily: "'Arial Unicode MS', cmbright"
+            },
+            tex2jax: {
+                inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+                processEscapes: true
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {{ end }}
+
+    <!-- ── Clarity Navbar: auto-generates floating ToC from h1/h2 headings ── -->
+    <script src="/js/navbar.js"></script>
 </head>
+
 <body>
-  {{ partial "nav.html" . }}
-  <main>
     {{ block "main" . }}{{ end }}
-  </main>
-  {{ partial "footer.html" . }}
-  {{ if .Site.Params.katex }}
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-    onload="renderMathInElement(document.body, {delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
-  {{ end }}
-  <script src="/js/main.js" defer></script>
+    {{ partial "footer.html" . }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

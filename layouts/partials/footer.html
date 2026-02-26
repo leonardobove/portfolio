@@ -1,12 +1,13 @@
-<footer class="footer">
-  <div class="footer__inner">
-    <p class="footer__copy">
-      <span class="mono">© {{ now.Year }} {{ .Site.Params.name }}</span>
-      <span class="footer__sep">·</span>
-      <span class="mono">Built with Hugo</span>
-      <span class="footer__sep">·</span>
-      <a class="footer__link" href="https://github.com/{{ .Site.Params.github }}/portfolio" target="_blank" rel="noopener">Source</a>
-    </p>
-    <p class="footer__math">$\hat{H}\ket{\psi} = i\hbar\frac{\partial}{\partial t}\ket{\psi}$</p>
-  </div>
+<!-- ══════════════════════════════════════════════════════════════════════════
+     Footer — Clarity pattern: <footer> > <div class="container"> > <p>
+     Attribution to Clarity Template is requested by the CC-BY-SA 4.0 licence.
+     ══════════════════════════════════════════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <p>
+            © {{ now.Year }} {{ .Site.Params.name }}.
+            Built on the <a href="https://shikun.io/projects/clarity">Clarity Template</a>,
+            designed by <a href="https://shikun.io/">Shikun Liu</a>.
+        </p>
+    </div>
 </footer>

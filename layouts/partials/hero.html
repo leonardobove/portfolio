@@ -1,29 +1,40 @@
-<section class="hero" id="hero" aria-label="Introduction">
-  <canvas class="hero__constellation" id="constellation-canvas" aria-hidden="true"></canvas>
-  <div class="hero__grid-bg" aria-hidden="true"></div>
-  <div class="hero__inner">
-    <div class="hero__eyebrow" aria-hidden="true">
-      {{ .Site.Params.institution }} &nbsp;·&nbsp; {{ .Site.Params.title }}
+<!-- ══════════════════════════════════════════════════════════════════════════
+     Title / Header — Clarity pattern: .container.blog > .blog-title.no-cover
+     ══════════════════════════════════════════════════════════════════════════ -->
+<div class="container blog" id="first-content" style="background-color: #E0E4E6;">
+    <div class="blog-title no-cover">
+        <div class="blog-intro">
+            <div>
+                <h1 class="title">{{ .Site.Params.name }}</h1>
+                <p class="author">{{ .Site.Params.title }} &nbsp;·&nbsp; {{ .Site.Params.institution }}</p>
+                <p class="abstract">
+                    {{ .Site.Params.tagline }}<br><br>
+                    {{ .Site.Params.mission }}
+                </p>
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    Currently: {{ .Site.Params.currently_working_on }}
+                </div>
+            </div>
+
+            <div class="info">
+                <div>
+                    <a href="{{ .Site.Params.cv_pdf }}" class="button icon" target="_blank" rel="noopener">
+                        Curriculum Vitæ <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                    <a href="mailto:{{ .Site.Params.email }}" class="button icon" style="background-color: rgba(0,0,0,0.08);">
+                        Email <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/{{ .Site.Params.github }}" class="button icon"
+                       style="background-color: rgba(0,0,0,0.08);" target="_blank" rel="noopener">
+                        GitHub <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/{{ .Site.Params.linkedin }}" class="button icon"
+                       style="background-color: rgba(0,0,0,0.08);" target="_blank" rel="noopener">
+                        LinkedIn <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="hero__terminal" aria-hidden="true">
-      <span class="hero__terminal-prompt">~/research $</span>
-      <span class="hero__terminal-cmd" id="terminal-text"></span>
-      <span class="hero__cursor" aria-hidden="true">▊</span>
-    </div>
-    <h1 class="hero__name">{{ .Site.Params.name }}</h1>
-    <p class="hero__tagline">{{ .Site.Params.tagline }}</p>
-    <p class="hero__mission">{{ .Site.Params.mission }}</p>
-    <div class="hero__badge" aria-label="Current work">
-      <span class="hero__badge-dot" aria-hidden="true"></span>
-      <span class="hero__badge-text">Currently: {{ .Site.Params.currently_working_on }}</span>
-    </div>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="#research">View Research</a>
-      <a class="btn btn--secondary" href="{{ .Site.Params.cv_pdf }}" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
-    </div>
-  </div>
-  <div class="hero__scroll-hint" aria-hidden="true">
-    <span class="mono">scroll</span>
-    <span class="hero__scroll-arrow">↓</span>
-  </div>
-</section>
+</div>

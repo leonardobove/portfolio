@@ -1,196 +1,137 @@
-<section class="section cv" id="cv" aria-labelledby="cv-heading">
-  <div class="section__inner">
-    <div class="section__label mono" aria-hidden="true">§ 4 · Curriculum Vitæ</div>
-    <h2 class="section__title" id="cv-heading">Curriculum Vitæ</h2>
-    <div class="cv__download-bar">
-      <a class="btn btn--primary" href="/files/cv_bove_leonardo.pdf" target="_blank" rel="noopener" aria-label="Download full CV as PDF">
-        Download Full CV <span aria-hidden="true">↓</span>
-      </a>
-      <span class="cv__download-note mono">PDF · Updated 2025</span>
+<!-- ══════════════════════════════════════════════════════════════════════════
+     CV — Clarity pattern: h1 + h2 subsections, alternating-row tables,
+     inline <code> tags for skills (Clarity native table + code styling)
+     ══════════════════════════════════════════════════════════════════════════ -->
+<div class="container blog main">
+    <h1>Curriculum Vitæ</h1>
+
+    <p class="text">
+        <a href="{{ .Site.Params.cv_pdf }}" class="button icon" target="_blank" rel="noopener"
+           style="margin-bottom: 0;">
+            Download Full CV (PDF) <i class="fa-solid fa-file-pdf"></i>
+        </a>
+    </p>
+
+    <!-- ── Education ──────────────────────────────────────────────────────── -->
+    <h2>Education</h2>
+
+    <div class="table-wrapper">
+        <table>
+            <thead class="center">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Period</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        M.Sc. Electronic Engineering<br>
+                        <small>Embedded Systems &amp; Mechatronics</small>
+                    </td>
+                    <td>University of Pisa</td>
+                    <td>2023–2025</td>
+                    <td>110/110 summa cum laude · GPA 4.0/4.0</td>
+                </tr>
+                <tr>
+                    <td>B.Sc. Electronic Engineering</td>
+                    <td>University of Pisa</td>
+                    <td>2020–2023</td>
+                    <td>110/110 summa cum laude · GPA 4.0/4.0</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="cv__columns">
+    <!-- ── Experience ─────────────────────────────────────────────────────── -->
+    <h2>Experience</h2>
 
-      <div class="cv__column">
-        <h3 class="cv__col-title mono">Education</h3>
-        <div class="timeline">
-
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">M.Sc. Electronic Engineering</span>
-                <span class="timeline__date mono">2023 – 2025</span>
-              </div>
-              <div class="timeline__org">University of Pisa</div>
-              <div class="timeline__detail">Embedded Systems &amp; Mechatronics · 110/110 summa cum laude · GPA 4.0/4.0</div>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">B.Sc. Electronic Engineering</span>
-                <span class="timeline__date mono">2020 – 2023</span>
-              </div>
-              <div class="timeline__org">University of Pisa</div>
-              <div class="timeline__detail">110/110 summa cum laude · GPA 4.0/4.0</div>
-            </div>
-          </div>
-
-        </div>
-
-        <h3 class="cv__col-title mono" style="margin-top:2.5rem;">Honors &amp; Awards</h3>
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">Industry 5.0 Excellence Learning Path</span>
-                <span class="timeline__date mono">2025</span>
-              </div>
-              <div class="timeline__org">FoReLab · University of Pisa</div>
-            </div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">Industry 4.0 Learning Path</span>
-                <span class="timeline__date mono">2025</span>
-              </div>
-              <div class="timeline__org">University of Pisa</div>
-            </div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">3× Merit Scholarship (Violin)</span>
-                <span class="timeline__date mono">2009–2021</span>
-              </div>
-              <div class="timeline__org">Cantiere Internazionale d'Arte di Montepulciano</div>
-            </div>
-          </div>
-        </div>
-
-        <h3 class="cv__col-title mono" style="margin-top:2.5rem;">Languages</h3>
-        <ul class="skills-list" role="list">
-          <li class="skills-list__item"><span class="skills-list__name">Italian</span><span class="skills-list__level mono">Native</span></li>
-          <li class="skills-list__item"><span class="skills-list__name">English</span><span class="skills-list__level mono">C2 — Cambridge CAE</span></li>
-          <li class="skills-list__item"><span class="skills-list__name">German</span><span class="skills-list__level mono">B2 — CLI Pisa</span></li>
-          <li class="skills-list__item"><span class="skills-list__name">French</span><span class="skills-list__level mono">A2</span></li>
-        </ul>
-      </div>
-
-      <div class="cv__column">
-        <h3 class="cv__col-title mono">Experience</h3>
-        <div class="timeline">
-
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">Graduate Research Fellow</span>
-                <span class="timeline__date mono">Sep. 2025 – Present</span>
-              </div>
-              <div class="timeline__org">Dept. of Information Engineering, University of Pisa</div>
-              <div class="timeline__detail">Qubit characterization · Dilution refrigerator · FPGA control · JupyterLab infrastructure · Student supervision</div>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">Master's Thesis Researcher</span>
-                <span class="timeline__date mono">May – Jul. 2025</span>
-              </div>
-              <div class="timeline__org">SQMS, Fermilab — Batavia, IL, USA</div>
-              <div class="timeline__detail">QPCB design · Qubase pulse sequencer · 2D/3D qubit characterization · Automated calibration</div>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">Chief Technology Officer</span>
-                <span class="timeline__date mono">Sep. 2023 – Sep. 2024</span>
-              </div>
-              <div class="timeline__org">E-Team Squadra Corse (FSAE), University of Pisa</div>
-              <div class="timeline__detail">Directed Electronics &amp; Software · Formula Student Germany 2024 · HV battery systems · GitLab CI</div>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">Embedded Software Developer</span>
-                <span class="timeline__date mono">May – Sep. 2023</span>
-              </div>
-              <div class="timeline__org">Sintonica s.r.l. — Navacchio, Italy</div>
-              <div class="timeline__detail">TFT LCD firmware · PSoC ARM · PCB layout</div>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot" aria-hidden="true"></div>
-            <div class="timeline__content">
-              <div class="timeline__header">
-                <span class="timeline__title">PCB &amp; Embedded Developer</span>
-                <span class="timeline__date mono">Sep. 2022 – Sep. 2023</span>
-              </div>
-              <div class="timeline__org">E-Team Squadra Corse (FSAE), University of Pisa</div>
-              <div class="timeline__detail">Vehicle Control Unit · FreeRTOS · ARM/AVR Bootloader · MiL/SiL testing</div>
-            </div>
-          </div>
-
-        </div>
-
-        <h3 class="cv__col-title mono" style="margin-top:2.5rem;">Technical Skills</h3>
-        <div class="skills-grid">
-          <div class="skills-cat">
-            <span class="skills-cat__label mono">Languages</span>
-            <div class="skills-cat__tags">
-              <span class="tag">C/C++</span><span class="tag">Python</span><span class="tag">Verilog</span><span class="tag">VHDL</span><span class="tag">MATLAB</span><span class="tag">Bash</span><span class="tag">Assembly</span>
-            </div>
-          </div>
-          <div class="skills-cat">
-            <span class="skills-cat__label mono">Quantum</span>
-            <div class="skills-cat__tags">
-              <span class="tag">Qiskit</span><span class="tag">QuTiP</span><span class="tag">QICK</span><span class="tag">Qubit characterization</span>
-            </div>
-          </div>
-          <div class="skills-cat">
-            <span class="skills-cat__label mono">FPGA</span>
-            <div class="skills-cat__tags">
-              <span class="tag">Vivado</span><span class="tag">Quartus</span><span class="tag">ModelSim</span>
-            </div>
-          </div>
-          <div class="skills-cat">
-            <span class="skills-cat__label mono">RF / Analog</span>
-            <div class="skills-cat__tags">
-              <span class="tag">ADS Keysight</span><span class="tag">SPICE</span><span class="tag">VNA</span><span class="tag">KiCad</span><span class="tag">Altium</span>
-            </div>
-          </div>
-          <div class="skills-cat">
-            <span class="skills-cat__label mono">Embedded</span>
-            <div class="skills-cat__tags">
-              <span class="tag">STM32CubeIDE</span><span class="tag">FreeRTOS</span><span class="tag">PSoC</span><span class="tag">Simulink MBD</span>
-            </div>
-          </div>
-          <div class="skills-cat">
-            <span class="skills-cat__label mono">Tools</span>
-            <div class="skills-cat__tags">
-              <span class="tag">Git</span><span class="tag">Linux</span><span class="tag">COMSOL</span><span class="tag">Fusion 360</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <div class="table-wrapper">
+        <table>
+            <thead class="center">
+                <tr>
+                    <th>Role</th>
+                    <th>Organisation</th>
+                    <th>Period</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Graduate Research Fellow</td>
+                    <td>Dept. of Information Engineering, University of Pisa</td>
+                    <td>Sep. 2025 – Present</td>
+                </tr>
+                <tr>
+                    <td>Master's Thesis Researcher</td>
+                    <td>SQMS, Fermilab — Batavia, IL, USA</td>
+                    <td>May – Jul. 2025</td>
+                </tr>
+                <tr>
+                    <td>Chief Technology Officer</td>
+                    <td>E-Team Squadra Corse (FSAE), University of Pisa</td>
+                    <td>Sep. 2023 – Sep. 2024</td>
+                </tr>
+                <tr>
+                    <td>Embedded Software Developer</td>
+                    <td>Sintonica s.r.l. — Navacchio, Italy</td>
+                    <td>May – Sep. 2023</td>
+                </tr>
+                <tr>
+                    <td>PCB &amp; Embedded Developer</td>
+                    <td>E-Team Squadra Corse (FSAE), University of Pisa</td>
+                    <td>Sep. 2022 – Sep. 2023</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-  </div>
-</section>
+
+    <!-- ── Technical Skills ───────────────────────────────────────────────── -->
+    <h2>Technical Skills</h2>
+
+    <p class="text">
+        <strong>Programming:</strong>
+        <code>C/C++</code> <code>Python</code> <code>Verilog</code> <code>VHDL</code>
+        <code>MATLAB</code> <code>Bash</code> <code>Assembly</code>
+    </p>
+    <p class="text">
+        <strong>Quantum:</strong>
+        <code>Qiskit</code> <code>QuTiP</code> <code>QICK</code> <code>Qubit characterisation</code>
+    </p>
+    <p class="text">
+        <strong>FPGA:</strong>
+        <code>Vivado</code> <code>Quartus</code> <code>ModelSim</code>
+    </p>
+    <p class="text">
+        <strong>RF / Analog:</strong>
+        <code>ADS Keysight</code> <code>SPICE</code> <code>VNA</code> <code>KiCad</code> <code>Altium</code>
+    </p>
+    <p class="text">
+        <strong>Embedded:</strong>
+        <code>STM32CubeIDE</code> <code>FreeRTOS</code> <code>PSoC</code> <code>Simulink MBD</code>
+    </p>
+    <p class="text">
+        <strong>Tools:</strong>
+        <code>Git</code> <code>Linux</code> <code>COMSOL</code> <code>Fusion 360</code>
+    </p>
+
+    <!-- ── Languages ──────────────────────────────────────────────────────── -->
+    <h2>Languages</h2>
+
+    <p class="text">
+        Italian (Native) &nbsp;·&nbsp;
+        English (C2 — Cambridge CAE) &nbsp;·&nbsp;
+        German (B2 — CLI Pisa) &nbsp;·&nbsp;
+        French (A2)
+    </p>
+
+    <!-- ── Honours & Awards ───────────────────────────────────────────────── -->
+    <h2>Honours &amp; Awards</h2>
+
+    <p class="text">
+        Industry 5.0 Excellence Learning Path — FoReLab, University of Pisa (2025)<br>
+        Industry 4.0 Learning Path — University of Pisa (2025)<br>
+        Merit Scholarship (Violin) ×&nbsp;3 — Cantiere Internazionale d'Arte di Montepulciano (2009–2021)
+    </p>
+</div>

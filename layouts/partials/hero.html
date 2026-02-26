@@ -1,0 +1,27 @@
+<section class="hero" id="hero" aria-label="Introduction">
+  <canvas class="hero__constellation" id="constellation-canvas" aria-hidden="true"></canvas>
+  <div class="hero__grid-bg" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__terminal" aria-hidden="true">
+      <span class="hero__terminal-prompt">~/research $</span>
+      <span class="hero__terminal-cmd" id="terminal-text"></span>
+      <span class="hero__cursor" aria-hidden="true">▊</span>
+    </div>
+    <h1 class="hero__name">{{ .Site.Params.name }}</h1>
+    <p class="hero__title">{{ .Site.Params.title }} <span class="hero__sep">·</span> {{ .Site.Params.institution }}</p>
+    <p class="hero__tagline">{{ .Site.Params.tagline }}</p>
+    <p class="hero__mission">{{ .Site.Params.mission }}</p>
+    <div class="hero__badge" aria-label="Current work">
+      <span class="hero__badge-dot" aria-hidden="true"></span>
+      <span class="hero__badge-text">Currently: {{ .Site.Params.currently_working_on }}</span>
+    </div>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#research">View Research</a>
+      <a class="btn btn--secondary" href="{{ .Site.Params.cv_pdf }}" target="_blank" rel="noopener">Download CV <span aria-hidden="true">↓</span></a>
+    </div>
+  </div>
+  <div class="hero__scroll-hint" aria-hidden="true">
+    <span class="mono">scroll</span>
+    <span class="hero__scroll-arrow">↓</span>
+  </div>
+</section>

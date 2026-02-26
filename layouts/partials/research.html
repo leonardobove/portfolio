@@ -1,0 +1,129 @@
+<section class="section research" id="research" aria-labelledby="research-heading">
+  <div class="section__inner">
+    <div class="section__label mono" aria-hidden="true">§ 2 · Research</div>
+    <h2 class="section__title" id="research-heading">Projects</h2>
+    <div class="research__filters" role="group" aria-label="Filter by research area">
+      <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="quantum">Quantum</button>
+      <button class="filter-btn" data-filter="fpga">FPGA</button>
+      <button class="filter-btn" data-filter="embedded">Embedded</button>
+      <button class="filter-btn" data-filter="rf">RF/Microwave</button>
+    </div>
+    <div class="research__grid" id="research-grid">
+
+      <article class="paper-card" data-tags="quantum fpga rf" aria-labelledby="proj-qubase">
+        <div class="paper-card__meta">
+          <span class="paper-card__year mono">2025</span>
+          <span class="paper-card__venue mono">Fermilab SQMS · Master's Thesis</span>
+        </div>
+        <h3 class="paper-card__title" id="proj-qubase">Qubase — Python Pulse Sequencer for FPGA Quantum Control</h3>
+        <p class="paper-card__abstract">
+          A high-level Python pulse sequencer built on top of the QICK FPGA platform. Qubase models pulse sequences as directed acyclic graphs (using <code>rustworkx</code>), enabling symbolic scheduling, parallel branch execution, and automated calibration workflows. Applied to characterize 2D and 3D superconducting qubits at Fermilab and support advanced quantum experiments including parallel fast-decay detection sequences.
+        </p>
+        <div class="paper-card__tags">
+          <span class="tag">Python</span>
+          <span class="tag">FPGA / QICK</span>
+          <span class="tag">Superconducting Qubits</span>
+          <span class="tag">Graph Algorithms</span>
+          <span class="tag">rustworkx</span>
+        </div>
+        <div class="paper-card__links">
+          <a class="paper-card__link" href="https://github.com/leonardobove" target="_blank" rel="noopener" aria-label="GitHub repository for Qubase">
+            <span aria-hidden="true">⌥</span> GitHub
+          </a>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="quantum fpga rf" aria-labelledby="proj-readout">
+        <div class="paper-card__meta">
+          <span class="paper-card__year mono">2025</span>
+          <span class="paper-card__venue mono">University of Pisa · Research Fellowship</span>
+        </div>
+        <h3 class="paper-card__title" id="proj-readout">FPGA-Based Qubit Readout & T₁/T₂ Characterization</h3>
+        <p class="paper-card__abstract">
+          Designed and operated a complete qubit measurement infrastructure using frequency multiplexing strategies and the QICK FPGA platform. Performed the first qubit experiments ever conducted in the Engineering Department at Pisa. Engineered the full microwave readout chain to maximize SNR without quantum-limited amplifiers, and established remote-access infrastructure for qubit experiments via JupyterLab.
+        </p>
+        <div class="paper-card__tags">
+          <span class="tag">QICK</span>
+          <span class="tag">FPGA</span>
+          <span class="tag">Verilog</span>
+          <span class="tag">Microwave Engineering</span>
+          <span class="tag">VNA</span>
+          <span class="tag">Python</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="quantum rf" aria-labelledby="proj-qpcb">
+        <div class="paper-card__meta">
+          <span class="paper-card__year mono">2025</span>
+          <span class="paper-card__venue mono">Fermilab SQMS</span>
+        </div>
+        <h3 class="paper-card__title" id="proj-qpcb">QPCB — Quantum Pulse Conversion Board</h3>
+        <p class="paper-card__abstract">
+          Designed and analyzed a custom microwave PCB for pulse frequency conversion in quantum computing setups. Full electromagnetic simulation using ADS Keysight, including S-parameter optimization and signal integrity analysis. The board bridges FPGA output frequencies to qubit drive frequencies, reducing system complexity.
+        </p>
+        <div class="paper-card__tags">
+          <span class="tag">PCB Design</span>
+          <span class="tag">ADS Keysight</span>
+          <span class="tag">EM Simulation</span>
+          <span class="tag">Altium</span>
+          <span class="tag">RF</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="fpga embedded" aria-labelledby="proj-digit">
+        <div class="paper-card__meta">
+          <span class="paper-card__year mono">2025</span>
+          <span class="paper-card__venue mono">University of Pisa · Course Project</span>
+        </div>
+        <h3 class="paper-card__title" id="proj-digit">Neural Network Digit Recognizer on FPGA</h3>
+        <p class="paper-card__abstract">
+          Engineered a handwritten digit recognition system on the Altera DE10-Lite (MAX10 FPGA). Built a Python digital twin for neural network training and fixed-point quantization. Implemented custom Verilog inference engine with touchscreen driver and LT24 display output. Achieved real-time inference with hardware-efficient quantized weights.
+        </p>
+        <div class="paper-card__tags">
+          <span class="tag">Verilog</span>
+          <span class="tag">FPGA</span>
+          <span class="tag">Python</span>
+          <span class="tag">Neural Networks</span>
+          <span class="tag">Quartus</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="embedded" aria-labelledby="proj-bootloader">
+        <div class="paper-card__meta">
+          <span class="paper-card__year mono">2022–2023</span>
+          <span class="paper-card__venue mono">E-Team Squadra Corse, FSAE</span>
+        </div>
+        <h3 class="paper-card__title" id="proj-bootloader">Multi-Architecture Bootloader with CAN Bus (ARM/AVR)</h3>
+        <p class="paper-card__abstract">
+          Engineered a unified bootloader supporting ARM and AVR microcontroller architectures with CAN bus communication for remote firmware updates on inaccessible ECUs in an electric race car. Enables rapid firmware deployment during time-critical race scenarios. Co-developed a MiL/SiL virtualization framework for pre-deployment firmware testing.
+        </p>
+        <div class="paper-card__tags">
+          <span class="tag">C/C++</span>
+          <span class="tag">CAN Bus</span>
+          <span class="tag">ARM</span>
+          <span class="tag">AVR</span>
+          <span class="tag">FreeRTOS</span>
+        </div>
+      </article>
+
+      <article class="paper-card" data-tags="rf" aria-labelledby="proj-pll">
+        <div class="paper-card__meta">
+          <span class="paper-card__year mono">2023</span>
+          <span class="paper-card__venue mono">University of Pisa · Course Project</span>
+        </div>
+        <h3 class="paper-card__title" id="proj-pll">SpaceFibre-Compatible 6.25 GHz PLL in SiGe BiCMOS</h3>
+        <p class="paper-card__abstract">
+          Modeled and simulated a phase-locked loop for SpaceFibre protocol compliance using the SG25H4 0.25 µm SiGe BiCMOS technology. Full system-level stability analysis, phase noise characterization, and performance benchmarking. Evaluated lock range, capture range, and jitter under process corners.
+        </p>
+        <div class="paper-card__tags">
+          <span class="tag">ADS Keysight</span>
+          <span class="tag">SiGe BiCMOS</span>
+          <span class="tag">RF IC Design</span>
+          <span class="tag">SpaceFibre</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>

@@ -1,1179 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leonardo Bove — Quantum & Electronic Engineering</title>
+  <title>Leonardo Bove — Quantum &amp; Electronic Engineering</title>
+  <meta name="description" content="Graduate Research Fellow in Quantum &amp; Electronic Engineering at the University of Pisa. Superconducting qubits, FPGA control systems, Fermilab SQMS.">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="./main.css">
+</head>
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Leonardo Bove" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Leonardo Bove">Leonardo Bove</h1>
-
-          <p class="title">Graduate Research Fellow</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:leonardo.bove01@gmail.com" class="contact-link">leonardo.bove01@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Pisa, Italy</address>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="link-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Institution</p>
-
-              <p class="contact-link">University of Pisa</p>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/leonardobove" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://linkedin.com/in/leonardobove" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a Graduate Research Fellow at the University of Pisa, specializing in superconducting qubits and quantum control systems. 
-            My research focuses on building the instrumentation that makes quantum computing possible.
-          </p>
-
-          <p>
-            I work at the intersection of quantum physics and electronic engineering, designing FPGA-based control systems for 
-            superconducting qubit characterization. My aim is to advance quantum computing through novel approaches to qubit 
-            measurement, control, and system-level optimization. Currently working on superconducting qubit characterization 
-            and FPGA-based quantum control.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">My Focus Areas</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Superconducting Qubits</h4>
-
-                <p class="service-item-text">
-                  Characterization, measurement, and optimization of superconducting qubit systems.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">FPGA & Quantum Control</h4>
-
-                <p class="service-item-text">
-                  Real-time control systems and signal processing for quantum state manipulation.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Electronic Instrumentation</h4>
-
-                <p class="service-item-text">
-                  Design of cryogenic control and measurement electronics for quantum systems.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Quantum Research</h4>
-
-                <p class="service-item-text">
-                  Academic research and publication in quantum computing and QEC.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Superconducting Qubits</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">FPGA Design (Verilog)</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Quantum Control & Electronics</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python & Scientific Computing</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">LB<span class="nav-logo-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+      </ul>
+      <button class="nav-mobile-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <div class="nav-mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  </main>
+  <!-- ====== HERO ====== -->
+  <section id="hero" class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Graduate Research Fellow &middot; University of Pisa</p>
+      <h1 class="hero-name">Leonardo<br><span class="hero-name-accent">Bove</span></h1>
+      <p class="hero-tagline">Superconducting Qubits &middot; FPGA Control Systems &middot; Fermilab SQMS</p>
+      <div class="hero-cta">
+        <a href="#research" class="btn btn-primary">View Research</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-value">110/110</span>
+          <span class="hero-stat-label">M.Sc. Summa Cum Laude</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">4.0</span>
+          <span class="hero-stat-label">GPA</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">SQMS</span>
+          <span class="hero-stat-label">Fermilab 2025</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">ETH</span>
+          <span class="hero-stat-label">Z&uuml;rich Invited Talk</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Scroll to About section">
+      <div class="hero-scroll-mouse">
+        <div class="hero-scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
 
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-col">
+          <div class="about-avatar-wrap">
+            <img src="./assets/images/my-avatar.png" alt="Leonardo Bove" class="about-avatar">
+            <div class="about-avatar-ring"></div>
+          </div>
+          <div class="about-contact-links">
+            <a href="mailto:leonardo.bove01@gmail.com" class="about-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>leonardo.bove01@gmail.com</span>
+            </a>
+            <a href="https://github.com/leonardobove" target="_blank" rel="noopener noreferrer" class="about-contact-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              <span>leonardobove</span>
+            </a>
+            <a href="https://linkedin.com/in/leonardobove" target="_blank" rel="noopener noreferrer" class="about-contact-link">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>leonardobove</span>
+            </a>
+          </div>
+        </div>
+        <div class="about-bio-col">
+          <p class="about-bio">
+            I'm a Graduate Research Fellow at the University of Pisa, working at the intersection of quantum physics and electronic engineering. My research focuses on measuring relaxation and decoherence times in superconducting qubits &mdash; building the precision instrumentation that makes quantum computing possible.
+          </p>
+          <p class="about-bio">
+            In summer 2025, I joined Fermilab's Superconducting Quantum Materials and Systems (SQMS) center in Batavia, IL, where I designed the QPCB (Quantum Pulse Conversion Board) and engineered Qubase, a Python pulse sequencer for QICK FPGA systems. That same year, I was invited to present my research at the ETH Z&uuml;rich Quantum Device Lab.
+          </p>
+          <p class="about-bio">
+            Beyond research, I served as CTO of E-Team Squadra Corse (Formula Student EV), played violin for 12 years, and earned 3 merit scholarships from the Cantiere Internazionale d'Arte di Montepulciano.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag">Superconducting Qubits</span>
+            <span class="about-tag">FPGA Systems</span>
+            <span class="about-tag">Quantum Control</span>
+            <span class="about-tag">Electronic Design</span>
+            <span class="about-tag">Pisa, Italy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ====== RESEARCH & EXPERIENCE ====== -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">My Journey</p>
+        <h2 class="section-title">Research &amp; Experience</h2>
+      </div>
+      <div class="timeline">
 
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <time class="timeline-date">May &ndash; Jul 2025</time>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge badge-cyan">Research Visit</span>
+            <h3 class="timeline-title">Fermilab SQMS Center</h3>
+            <p class="timeline-org">Superconducting Quantum Materials and Systems &middot; Batavia, IL, USA</p>
+            <ul class="timeline-bullets">
+              <li>Designed QPCB (Quantum Pulse Conversion Board) &mdash; RF hardware for pulse frequency conversion in qubit control chains</li>
+              <li>Engineered Qubase, a Python pulse sequencer integrating with the QICK FPGA framework</li>
+              <li>Conducted qubit characterization measurements in a dilution refrigerator environment</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>PCB Design</span><span>FPGA</span><span>Python</span><span>RF Engineering</span><span>Cryogenics</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <time class="timeline-date">Jul 2025</time>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge badge-violet">Invited Talk</span>
+            <h3 class="timeline-title">ETH Z&uuml;rich Quantum Device Lab</h3>
+            <p class="timeline-org">Eidgen&ouml;ssische Technische Hochschule Z&uuml;rich &middot; Z&uuml;rich, Switzerland</p>
+            <ul class="timeline-bullets">
+              <li>Invited to present research on superconducting qubit characterization instrumentation</li>
+              <li>Presented QPCB design methodology and qubit measurement techniques</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Quantum Computing</span><span>Research Presentation</span><span>Invited Speaker</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <time class="timeline-date">2024 &ndash; Present</time>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge badge-cyan">Fellowship</span>
+            <h3 class="timeline-title">Graduate Research Fellow</h3>
+            <p class="timeline-org">University of Pisa &middot; Pisa, Italy</p>
+            <ul class="timeline-bullets">
+              <li>Research topic: "Measurement of relaxation and decoherence times in superconducting qubits"</li>
+              <li>Developing FPGA-based quantum control systems and qubit measurement software</li>
+              <li>Characterizing T&#x2081; and T&#x2082; times using microwave spectroscopy techniques</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Qubits</span><span>FPGA</span><span>Qiskit</span><span>QuTiP</span><span>Microwave RF</span>
+            </div>
+          </div>
+        </div>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <time class="timeline-date">2023 &ndash; 2024</time>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge badge-gold">CTO</span>
+            <h3 class="timeline-title">E-Team Squadra Corse FSAE</h3>
+            <p class="timeline-org">Formula Student Electric Vehicle &middot; University of Pisa</p>
+            <ul class="timeline-bullets">
+              <li>Led electronics and firmware development for a Formula Student electric race car</li>
+              <li>Designed embedded control systems, BMS, and vehicle dynamics electronics</li>
+              <li>Managed a cross-functional engineering team of 8 people</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>C/C++</span><span>Embedded</span><span>CAN bus</span><span>BMS</span><span>STM32</span>
+            </div>
+          </div>
+        </div>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <time class="timeline-date">2022 &ndash; 2023</time>
+          <div class="timeline-card glass-card">
+            <span class="timeline-badge badge-muted">Industry</span>
+            <h3 class="timeline-title">Embedded Software Developer</h3>
+            <p class="timeline-org">Sintonica s.r.l. &middot; Pisa, Italy</p>
+            <ul class="timeline-bullets">
+              <li>Developed firmware for TFT LCD display controllers in industrial products</li>
+              <li>Programmed PSoC ARM microcontrollers for signal processing applications</li>
+              <li>Implemented SPI/I2C/UART communication protocols and hardware drivers</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>C</span><span>ARM</span><span>PSoC</span><span>TFT LCD</span><span>Firmware</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Open Source</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <a href="https://github.com/leonardobove/qpcb" target="_blank" rel="noopener noreferrer" class="project-card glass-card" aria-label="QPCB project on GitHub">
+          <div class="project-card-visual" style="--grad-a: #00F5FF; --grad-b: #0080FF">
+            <svg viewBox="0 0 80 60" fill="none" aria-hidden="true">
+              <circle cx="40" cy="30" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="40" cy="30" r="13" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+              <circle cx="40" cy="30" r="4" fill="currentColor" opacity="0.9"/>
+              <path d="M18 30 Q28 8 40 30 Q52 52 62 30" stroke="currentColor" stroke-width="1.5" opacity="0.5" fill="none"/>
+              <path d="M40 8 Q58 18 58 30 Q58 42 40 52 Q22 42 22 30 Q22 18 40 8Z" stroke="currentColor" stroke-width="0.8" opacity="0.2" fill="none"/>
+            </svg>
+          </div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <h3 class="project-title">QPCB</h3>
+              <svg class="project-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+            <p class="project-desc">Quantum Pulse Conversion Board &mdash; RF hardware designed at Fermilab SQMS for frequency conversion in superconducting qubit control chains.</p>
+            <div class="project-tags">
+              <span>KiCad</span><span>RF Engineering</span><span>PCB Design</span><span>Quantum</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/leonardobove/spacefibre_pll" target="_blank" rel="noopener noreferrer" class="project-card glass-card" aria-label="SpaceFibre PLL project on GitHub">
+          <div class="project-card-visual" style="--grad-a: #8B5CF6; --grad-b: #EC4899">
+            <svg viewBox="0 0 80 60" fill="none" aria-hidden="true">
+              <path d="M8 42 L20 22 L30 36 L40 10 L50 32 L60 20 L72 28" stroke="currentColor" stroke-width="2" opacity="0.65" fill="none" stroke-linejoin="round"/>
+              <circle cx="40" cy="10" r="3.5" fill="currentColor" opacity="0.9"/>
+              <circle cx="20" cy="22" r="3.5" fill="currentColor" opacity="0.7"/>
+              <circle cx="60" cy="20" r="3.5" fill="currentColor" opacity="0.7"/>
+              <line x1="8" y1="50" x2="72" y2="50" stroke="currentColor" stroke-width="0.8" opacity="0.2"/>
+            </svg>
+          </div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <h3 class="project-title">SpaceFibre PLL</h3>
+              <svg class="project-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+            <p class="project-desc">Phase-Locked Loop implementation for SpaceFibre high-speed serial communication protocol, targeting space-grade FPGA designs.</p>
+            <div class="project-tags">
+              <span>Verilog</span><span>FPGA</span><span>PLL</span><span>SpaceFibre</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/leonardobove/handwritten_digit_recognition" target="_blank" rel="noopener noreferrer" class="project-card glass-card" aria-label="Handwritten Digit Recognition project on GitHub">
+          <div class="project-card-visual" style="--grad-a: #F59E0B; --grad-b: #EF4444">
+            <svg viewBox="0 0 80 60" fill="none" aria-hidden="true">
+              <rect x="12" y="15" width="13" height="38" rx="2" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="33" y="25" width="13" height="28" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="54" y="8" width="13" height="45" rx="2" fill="currentColor" opacity="0.55" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="8" y1="53" x2="72" y2="53" stroke="currentColor" stroke-width="0.8" opacity="0.25"/>
+            </svg>
+          </div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <h3 class="project-title">Digit Recognition</h3>
+              <svg class="project-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+            <p class="project-desc">Neural network for handwritten digit classification on the MNIST dataset, implemented from scratch using NumPy without ML frameworks.</p>
+            <div class="project-tags">
+              <span>Python</span><span>NumPy</span><span>Neural Networks</span><span>MNIST</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/leonardobove/dual_axis_accelerometer" target="_blank" rel="noopener noreferrer" class="project-card glass-card" aria-label="Dual Axis Accelerometer project on GitHub">
+          <div class="project-card-visual" style="--grad-a: #10B981; --grad-b: #00F5FF">
+            <svg viewBox="0 0 80 60" fill="none" aria-hidden="true">
+              <circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+              <line x1="40" y1="8" x2="40" y2="52" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <line x1="18" y1="30" x2="62" y2="30" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <polygon points="40,11 36.5,18 43.5,18" fill="currentColor" opacity="0.85"/>
+              <polygon points="59,30 52,26.5 52,33.5" fill="currentColor" opacity="0.85"/>
+              <circle cx="40" cy="30" r="3.5" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <h3 class="project-title">Dual Axis Accelerometer</h3>
+              <svg class="project-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+            <p class="project-desc">Custom MEMS dual-axis accelerometer with analog signal conditioning PCB, designed in KiCad with full SPICE simulation.</p>
+            <div class="project-tags">
+              <span>KiCad</span><span>SPICE</span><span>Analog</span><span>MEMS</span><span>PCB</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/leonardobove/rubiks_cube_automatic_solver" target="_blank" rel="noopener noreferrer" class="project-card glass-card" aria-label="Rubik's Cube Solver project on GitHub">
+          <div class="project-card-visual" style="--grad-a: #8B5CF6; --grad-b: #06B6D4">
+            <svg viewBox="0 0 80 60" fill="none" aria-hidden="true">
+              <rect x="18" y="10" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.7" fill="currentColor" fill-opacity="0.12"/>
+              <rect x="43" y="10" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.5" fill="currentColor" fill-opacity="0.08"/>
+              <rect x="18" y="33" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.5" fill="currentColor" fill-opacity="0.08"/>
+              <rect x="43" y="33" width="19" height="19" rx="3" stroke="currentColor" stroke-width="1.5" opacity="0.3" fill="currentColor" fill-opacity="0.05"/>
+            </svg>
+          </div>
+          <div class="project-card-content">
+            <div class="project-card-header">
+              <h3 class="project-title">Rubik's Cube Solver</h3>
+              <svg class="project-external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+            <p class="project-desc">Automated mechanical Rubik's cube solver robot using computer vision for state detection and embedded C++ for servo control.</p>
+            <div class="project-tags">
+              <span>C++</span><span>STM32</span><span>Computer Vision</span><span>Robotics</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Technical Arsenal</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group glass-card">
+          <h3 class="skill-group-title">Quantum Computing</h3>
+          <div class="skill-tags">
+            <span>Qiskit</span><span>QuTiP</span><span>Superconducting Qubits</span>
+            <span>QICK FPGA</span><span>Qubit Characterization</span><span>Decoherence Measurement</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3 class="skill-group-title">FPGA &amp; HDL</h3>
+          <div class="skill-tags">
+            <span>Verilog</span><span>VHDL</span><span>Vivado</span><span>Quartus</span>
+            <span>Digital Design</span><span>RTL</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3 class="skill-group-title">Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>C</span><span>C++</span><span>MATLAB</span>
+            <span>Bash</span><span>Assembly</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3 class="skill-group-title">Electronic Design</h3>
+          <div class="skill-tags">
+            <span>KiCad</span><span>Altium Designer</span><span>SPICE</span>
+            <span>ADS</span><span>COMSOL</span><span>RF Engineering</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3 class="skill-group-title">Embedded Systems</h3>
+          <div class="skill-tags">
+            <span>STM32</span><span>PSoC ARM</span><span>RTOS</span>
+            <span>CAN bus</span><span>SPI / I2C / UART</span><span>Firmware</span>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <h3 class="skill-group-title">Lab &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>Linux</span><span>VNA</span>
+            <span>Oscilloscope</span><span>Spectrum Analyzer</span><span>Cryogenics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EDUCATION ====== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Academic Background</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card glass-card">
+          <div class="edu-degree-badge">M.Sc.</div>
+          <h3 class="edu-title">Electronic Engineering</h3>
+          <p class="edu-school">University of Pisa</p>
+          <div class="edu-meta">
+            <span class="edu-year">2022 &ndash; 2024</span>
+            <span class="edu-grade">110/110 Summa Cum Laude</span>
+          </div>
+          <p class="edu-note">Quantum electronics, FPGA systems, RF &amp; microwave engineering, signal processing</p>
+        </div>
+        <div class="edu-card glass-card">
+          <div class="edu-degree-badge">B.Sc.</div>
+          <h3 class="edu-title">Electronic Engineering</h3>
+          <p class="edu-school">University of Pisa</p>
+          <div class="edu-meta">
+            <span class="edu-year">2019 &ndash; 2022</span>
+            <span class="edu-grade">110/110 Summa Cum Laude</span>
+          </div>
+          <p class="edu-note">Circuit theory, analog electronics, digital systems, electromagnetics, signal processing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== LANGUAGES & EXTRAS ====== -->
+  <section id="extras" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Beyond Engineering</p>
+        <h2 class="section-title">Languages &amp; More</h2>
+      </div>
+      <div class="extras-grid">
+        <div class="extras-col">
+          <h3 class="extras-col-title">Languages</h3>
+          <div class="language-list">
+            <div class="language-item">
+              <span class="lang-name">Italian</span>
+              <span class="lang-level lang-native">Native</span>
+            </div>
+            <div class="language-item">
+              <span class="lang-name">English</span>
+              <span class="lang-level lang-c2">C2 &middot; Cambridge CAE</span>
+            </div>
+            <div class="language-item">
+              <span class="lang-name">German</span>
+              <span class="lang-level lang-b2">B2</span>
+            </div>
+            <div class="language-item">
+              <span class="lang-name">French</span>
+              <span class="lang-level lang-a2">A2</span>
+            </div>
+          </div>
+        </div>
+        <div class="extras-col">
+          <h3 class="extras-col-title">Honors &amp; Interests</h3>
+          <div class="honors-list">
+            <div class="honor-item">
+              <div class="honor-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+              </div>
+              <div>
+                <p class="honor-title">3&times; Merit Scholarship</p>
+                <p class="honor-org">Cantiere Internazionale d'Arte di Montepulciano</p>
+              </div>
+            </div>
+            <div class="honor-item">
+              <div class="honor-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+              </div>
+              <div>
+                <p class="honor-title">Violin &mdash; 12 Years</p>
+                <p class="honor-org">Classical training, international music festivals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-intro">
+          Open to collaborations in quantum computing research, FPGA engineering projects, and academic discussions. Feel free to reach out.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:leonardo.bove01@gmail.com" class="contact-btn contact-btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            leonardo.bove01@gmail.com
+          </a>
+          <a href="https://github.com/leonardobove" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-ghost">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/leonardobove" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-ghost">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">Leonardo Bove &middot; Pisa, Italy &middot; 2025</p>
+    </div>
+  </footer>
+
+  <!-- GSAP (UMD, before module script) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Main JS as ES module (imports Three.js) -->
+  <script type="module" src="./main.js"></script>
 
 </body>
-
 </html>

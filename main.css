@@ -562,6 +562,13 @@ section { padding: var(--section-pad) 0; }
   line-height: 1.6;
 }
 
+.timeline-summary {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
 .timeline-tags {
   display: flex;
   flex-wrap: wrap;

@@ -24,11 +24,11 @@
   --font-body: 'Inter', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
-  --nav-height:  64px;
-  --section-pad: clamp(64px, 8vw, 120px);
-  --max-w:       1200px;
-  --radius-card: 16px;
-  --radius-btn:  8px;
+  --nav-height:  72px;
+  --section-pad: clamp(80px, 10vw, 140px);
+  --max-w:       1400px;
+  --radius-card: 20px;
+  --radius-btn:  12px;
 
   --glass-bg:   rgba(255, 255, 255, 0.04);
   --glass-blur: blur(12px);
@@ -450,8 +450,9 @@ section { padding: var(--section-pad) 0; }
 
 .about-text p {
   color: var(--text-secondary);
-  margin-bottom: 16px;
-  font-size: 0.975rem;
+  margin-bottom: 24px;
+  font-size: 1rem;
+  line-height: 1.8;
 }
 
 .about-stats {
